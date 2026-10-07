@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="description" content="Agrupación de Voluntarios de Protección Civil de Huelva - Servicios preventivos, alertas de emergencia y comunicaciones." />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PC Huelva" />
+    <meta name="application-name" content="PC Huelva" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Protección Civil Huelva" />
+    <meta property="og:description" content="Agrupación de Voluntarios de Protección Civil de Huelva" />
+    <meta property="og:image" content="/ayuntamientologo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Protección Civil Huelva" />
+    <meta name="twitter:image" content="/ayuntamientologo.png" />
+
+    <title>Protección Civil Huelva</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

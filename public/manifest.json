@@ -1,0 +1,57 @@
+{
+  "name": "Protección Civil Huelva",
+  "short_name": "PC Huelva",
+  "description": "Agrupación de Voluntarios de Protección Civil de Huelva",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1e40af",
+  "theme_color": "#1e40af",
+  "categories": ["emergency", "government", "utilities"],
+  "lang": "es",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "short_name": "Alertas",
+      "description": "Ver alertas de emergencia activas",
+      "url": "/?page=alertas"
+    },
+    {
+      "short_name": "Servicios",
+      "description": "Ver servicios preventivos",
+      "url": "/?page=servicios"
+    },
+    {
+      "short_name": "Reuniones",
+      "description": "Ver reuniones del grupo",
+      "url": "/?page=reuniones"
+    }
+  ]
+}
